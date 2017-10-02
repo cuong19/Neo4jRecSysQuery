@@ -9,7 +9,7 @@ dist/
 nbdist/
 .nb-gradle/
 target/
-nbactions.xml
+#nbactions.xml
 
 # ignore maven
 pom.xml.tag
