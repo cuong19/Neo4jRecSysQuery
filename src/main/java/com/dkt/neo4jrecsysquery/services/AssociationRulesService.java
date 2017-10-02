@@ -15,12 +15,12 @@ import org.springframework.stereotype.Service;
  * @author KienNT
  */
 @Service
-public class ItemService {
+public class AssociationRulesService {
 
     @Autowired
     ItemRepository itemRepository;
 
-    public List<String> recommend(List<String> items) {
-        return itemRepository.recommend(items);
+    public List<String> getConsequences(List<String> items) {
+        return itemRepository.getAssocationRulesConsequences(items);
     }
 }
