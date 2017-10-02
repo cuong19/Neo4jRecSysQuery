@@ -23,5 +23,5 @@ public class ItemSet {
     String name;
 
     @Relationship(type = "OCCURS_WITH", direction = Relationship.OUTGOING)
-    private List<Item> items = new ArrayList<>();
+    List<Item> items = new ArrayList<>();
 }

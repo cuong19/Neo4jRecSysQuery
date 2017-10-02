@@ -23,6 +23,6 @@ public class Item {
     String name;
 
     @Relationship(type = "OCCURS_IN", direction = Relationship.OUTGOING)
-    private List<ItemSet> itemSets = new ArrayList<>();
+    List<ItemSet> itemSets = new ArrayList<>();
 
 }

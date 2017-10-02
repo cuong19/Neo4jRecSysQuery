@@ -19,8 +19,6 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 @RepositoryRestResource(collectionResourceRel = "items", path = "items")
 public interface ItemRepository extends GraphRepository<Item> {
 
-//    @Query("CREATE (i:Item {name:{name}})")
-//    void addItem(@Param("name") String name);
     @Query("MATCH (ia:Item)-[ra:OCCURS_IN]->(s:ItemSet)-[rc:OCCURS_WITH]->(ic:Item) WHERE ia.name IN {items} WITH s, count(*) as count_ia, rc.lift as lift, rc.support as support, rc.confidence as confidence, ic.name as consequent ORDER BY count_ia DESC, lift DESC, support DESC, confidence DESC RETURN DISTINCT consequent")
-    List<String> recommend(@Param("items")List<String> items);
+    List<String> getAssocationRulesConsequences(@Param("items")List<String> antencedents);
 }
