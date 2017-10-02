@@ -14,7 +14,7 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
  * @author KienNT
  */
 @SpringBootApplication
-@EntityScan("com.dkt.neo4j.entity")
+@EntityScan("com.dkt.neo4jrecsysquery.entity")
 public class Application {
 
     public static void main(String[] args) {
