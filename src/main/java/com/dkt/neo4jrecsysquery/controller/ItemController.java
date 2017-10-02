@@ -5,7 +5,7 @@
  */
 package com.dkt.neo4jrecsysquery.controller;
 
-import com.dkt.neo4j.services.ItemService;
+import com.dkt.neo4jrecsysquery.services.ItemService;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;

@@ -5,7 +5,7 @@
  */
 package com.dkt.neo4jrecsysquery.repositories;
 
-import com.dkt.neo4j.entity.Item;
+import com.dkt.neo4jrecsysquery.entity.Item;
 import java.util.List;
 import org.springframework.data.neo4j.annotation.Query;
 import org.springframework.data.neo4j.repository.GraphRepository;

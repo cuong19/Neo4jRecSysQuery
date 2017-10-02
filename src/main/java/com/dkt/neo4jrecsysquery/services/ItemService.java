@@ -5,7 +5,7 @@
  */
 package com.dkt.neo4jrecsysquery.services;
 
-import com.dkt.neo4j.repositories.ItemRepository;
+import com.dkt.neo4jrecsysquery.repositories.ItemRepository;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
